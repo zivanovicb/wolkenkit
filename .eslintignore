@@ -3,3 +3,7 @@
 
 # Test applications outside of the main typescript project
 test/shared/applications/typescript/
+
+# Website build artefacts
+websites/documentation/.next/
+websites/documentation/out/

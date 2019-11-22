@@ -4,6 +4,10 @@ node_modules/
 # Build artefacts
 /build/
 
+# Website artefacts
+websites/documentation/.next/
+websites/documentation/out/
+
 # OS generated files and folders
 .DS_Store
 npm-debug.log

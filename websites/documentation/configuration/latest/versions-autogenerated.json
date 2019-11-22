@@ -1,0 +1,13 @@
+{
+  "cli": "3.1.0",
+  "docker": "18.09",
+  "node": "10.13.0",
+  "vagrant": "2.2.1",
+  "chrome": "67.0",
+  "firefox": "60.0",
+  "safari": "11.1",
+  "edge": "17.0",
+  "ie": "11.0",
+  "clientSdkJs": "3.1.0",
+  "depotClientSdkJs": "3.1.0"
+}

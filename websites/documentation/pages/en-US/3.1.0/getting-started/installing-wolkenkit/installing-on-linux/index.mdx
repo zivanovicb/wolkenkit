@@ -1,0 +1,57 @@
+import { Code, Hint } from '../../../../../../components';
+
+# Installing on Linux
+
+To run wolkenkit on Linux you need to setup a few things.
+
+## Setting up Docker
+
+<p>
+  To run wolkenkit you need Docker { props.versions.docker } or higher. To setup Docker on Linux, <a href='https://docs.docker.com/engine/installation/linux/'>follow the installation instructions</a> for the Linux distribution of your choice.
+</p>
+
+## Setting up Node.js
+
+<p>
+  To run wolkenkit you need Node.js { props.versions.node } or higher. We recommend installing Node.js using <a href='https://github.com/creationix/nvm'>nvm</a>, which enables switching between different Node.js versions.
+</p>
+
+First, install nvm using this command:
+
+```shell
+$ curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+```
+
+Then, restart your terminal and install Node.js using the following commands:
+
+<Code language='shell'>{`
+  $ nvm install ${props.versions.node}
+  $ nvm alias default ${props.versions.node}
+  $ nvm use ${props.versions.node}
+`}</Code>
+
+## Setting up wolkenkit
+
+To download and install wolkenkit, run the following command:
+
+<Code language='shell'>{`
+  $ npm install -g wolkenkit@${props.versions.cli}
+`}</Code>
+
+## Verifying the installation
+
+Verify that wolkenkit is installed correctly by running the following command:
+
+```shell
+$ wolkenkit --version
+```
+
+<Hint type='congrats'>
+
+  **Yay, congratulations!**
+
+  You have successfully installed wolkenkit!
+
+</Hint>
+
+To learn how to build and run your first application, have a look at [creating your first application](../../creating-your-first-application/setting-the-objective/) 😊!
