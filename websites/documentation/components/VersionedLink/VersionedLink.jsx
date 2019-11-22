@@ -29,7 +29,7 @@ const createReplace = function ({ activePage, rewriteLatestAs }) {
   };
 };
 
-const searchForVersionsRegularExpression = new RegExp('#(?<version>VERSION|VERSIONS.NODE)#', 'gu');
+const searchForVersionsRegularExpression = /#(?<version>VERSION|VERSIONS.NODE)#/gu;
 
 const VersionedLink = function ({ href, children, rewriteLatestAs } = {}) {
   const { activePage } = usePageContext();
